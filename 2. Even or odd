@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+int n;
+//taking the dimension and cointent of array from user
+
+cout<<"Enter the number of items"<<endl;
+cin>>n;
+int *arr=new int(n);
+
+for(int i=0;i<=n;i++){
+    cin>>arr[i];
+}
+
+//checking odd or even
+
+for(int i=0;i<n;i++){
+    
+(arr[i]%2==0)?cout<<"even"<<endl:cout<<"Odd"<<endl;
+    
+}
+return 0;
+}
