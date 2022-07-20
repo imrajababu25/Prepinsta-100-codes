@@ -2,15 +2,18 @@
 using namespace std;
 
 int main(){
-int a[5];
+int n;
+cout<<"Enter the number of items"<<endl;
+cin>>n;
+int *arr=new int(n);
 
-for(int i=0;i<=4;i++){
-    cin>>a[i];
+for(int i=0;i<=n;i++){
+    cin>>arr[i];
 }
 
-for(int i=0;i<=4;i++){
+for(int i=0;i<n;i++){
     
-(a[i]>0)?cout<<"P"<<endl:(a[i]<0)?cout<<"N"<<endl:cout<<"Z"<<endl;
+(arr[i]>0)?cout<<"P"<<endl:(arr[i]<0)?cout<<"N"<<endl:cout<<"Z"<<endl;
     
 }
 return 0;
